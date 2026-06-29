@@ -1,5 +1,5 @@
 import React from 'react'
-import { GitFork } from 'lucide-react'
+import { GitFork, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
   {
@@ -9,14 +9,14 @@ const PROJECTS = [
     items: [
       {
         title: 'Album App (Backend)',
-        desc: 'Full-stack social app backend built with Spring Boot 3.4, Spring Security, JWT auth, JPA, and PostgreSQL. Features chat, compliments, mood tracking, and user management.',
-        tags: ['Java', 'Spring Boot', 'JPA', 'JWT', 'PostgreSQL'],
+        desc: 'A social platform where users can share photos, chat with friends, and track their mood. Built with Spring Boot, JWT authentication, and PostgreSQL.',
+        tags: ['Java', 'Spring Boot', 'PostgreSQL', 'REST API'],
         dir: 'album/album-app/',
       },
       {
         title: 'Demo REST API',
-        desc: 'Lightweight REST API with Spring Boot 4.0, Spring WebMVC, Spring Data JDBC, and H2 in-memory database.',
-        tags: ['Java', 'Spring Boot', 'JDBC', 'H2'],
+        desc: 'A lightweight REST API demo with Spring Boot, Spring WebMVC, and an in-memory database. Great for learning backend structure.',
+        tags: ['Java', 'Spring Boot', 'REST API'],
         dir: 'demo/',
       },
     ],
@@ -28,14 +28,14 @@ const PROJECTS = [
     items: [
       {
         title: 'Album App (Frontend)',
-        desc: 'React 19 frontend for the Album App with Vite, React Router, and full auth/chat/feed UI integration.',
+        desc: 'The frontend for the social platform — includes login, photo feed, chat interface, and mood tracking. Built with React 19 and Vite.',
         tags: ['React', 'Vite', 'React Router'],
         dir: 'album/album-app/frontend/',
       },
       {
         title: 'Album FE',
-        desc: 'Separate React 18 frontend with Vite and Tailwind CSS. Includes auth, chat, feed, hero, login, and register components.',
-        tags: ['React', 'Vite', 'Tailwind CSS', 'lucide-react'],
+        desc: 'A separate React frontend with Tailwind CSS. Includes auth, chat, feed, and reusable component library.',
+        tags: ['React', 'Vite', 'Tailwind CSS'],
         dir: 'album/fe/',
       },
     ],
@@ -47,19 +47,19 @@ const PROJECTS = [
     items: [
       {
         title: 'FBS Booking System',
-        desc: 'Full-stack flight booking platform. Vue 3 frontend with Pinia, Vue Router, Chart.js, Leaflet maps, and WebSockets. Django 6.0 backend with DRF, JWT, XGBoost ML predictions, and PayMongo payments.',
-        tags: ['Vue 3', 'Django', 'DRF', 'Pinia', 'WebSocket', 'XGBoost'],
+        desc: 'A flight booking platform with real-time seat selection, payment processing, and an admin dashboard. Built with Vue 3 and Django.',
+        tags: ['Vue 3', 'Django', 'Payments', 'Real-time'],
         dir: 'fbs-vue/',
       },
       {
         title: 'M.A.R.S La Union',
-        desc: 'Municipal request management system. Vue 3 frontend with Pinia, Vue Router, Chart.js, and PDF generation. Django 6.0 backend with DRF, SimpleJWT, and PostgreSQL.',
-        tags: ['Vue 3', 'Django', 'DRF', 'Pinia', 'Chart.js', 'PostgreSQL'],
+        desc: 'A municipal request management system for tracking resident requests, generating reports, and managing staff assignments.',
+        tags: ['Vue 3', 'Django', 'Dashboard', 'Reports'],
         dir: 'M.A.R.S_Launion/',
       },
       {
         title: 'My Dream Place Hotel',
-        desc: 'Hotel venue SPA built with Vue 3, Vite, and Tailwind CSS. Clean, responsive single-page interface.',
+        desc: 'A hotel venue SPA booking page with room listings, amenities, and a clean responsive design.',
         tags: ['Vue 3', 'Vite', 'Tailwind CSS'],
         dir: 'hotel/',
       },
@@ -72,13 +72,13 @@ const PROJECTS = [
     items: [
       {
         title: 'Queue Management',
-        desc: 'Real-time queue management system with Django 5.2, Channels (WebSockets), APScheduler, and Redis. Multi-app architecture with dashboard, display, survey, and student portals.',
-        tags: ['Django', 'Channels', 'Redis', 'WebSocket', 'APScheduler'],
+        desc: 'A real-time queue management system for schools and businesses. Includes a dashboard, display screen, and student portal.',
+        tags: ['Django', 'WebSocket', 'Redis', 'Dashboard'],
         dir: 'queue/',
       },
       {
         title: 'Practice Django',
-        desc: 'Django 6.0 practice project with DRF integration, custom models, serializers, views, and URL routing with SQLite.',
+        desc: 'A practice project exploring Django REST Framework, custom models, and API design patterns.',
         tags: ['Django', 'DRF', 'SQLite'],
         dir: 'practice_django/',
       },
@@ -91,19 +91,19 @@ const PROJECTS = [
     items: [
       {
         title: 'IoT Water Level Monitor',
-        desc: 'Flask 3.0 IoT web app for water level monitoring with SQLAlchemy, CORS, and SQLite. Real-time sensor data visualization.',
-        tags: ['Flask', 'SQLAlchemy', 'SQLite', 'IoT'],
+        desc: 'A web app for monitoring water levels in real time using sensor data. Built with Flask and SQLite.',
+        tags: ['Flask', 'IoT', 'Real-time', 'SQLite'],
         dir: 'iot-flask/',
       },
       {
         title: 'Richard OCR Engine',
-        desc: 'Flask OCR management app integrating Google Cloud Vision, spaCy NLP, and Tesseract OCR for book image text extraction and analysis.',
-        tags: ['Flask', 'Google Vision', 'spaCy', 'OCR'],
+        desc: 'An OCR management app that extracts text from book images using Google Cloud Vision and spaCy NLP.',
+        tags: ['Flask', 'OCR', 'NLP', 'Google Vision'],
         dir: 'richard/',
       },
       {
         title: 'Tailor Blueprint App',
-        desc: 'Modular Flask app using the Blueprint pattern with Tailwind CSS frontend. Clean app factory architecture.',
+        desc: 'A modular Flask app using the Blueprint pattern with a Tailwind CSS frontend.',
         tags: ['Flask', 'Blueprint', 'Tailwind CSS'],
         dir: 'tailor/',
       },
@@ -116,15 +116,28 @@ const PROJECTS = [
     items: [
       {
         title: 'Laravel 13 App',
-        desc: 'Full Laravel 13 skeleton with Blade templates, Vite build pipeline, Pest testing, and PHP 8.3.',
-        tags: ['PHP', 'Laravel 13', 'Blade', 'Vite'],
+        desc: 'A full Laravel skeleton with Blade templates, Vite build pipeline, and Pest testing.',
+        tags: ['PHP', 'Laravel', 'Blade', 'Vite'],
         dir: 'laravel-project/',
       },
       {
         title: 'User Auth System',
-        desc: 'Plain PHP registration/login system with OTP verification, password reset, security questions, and admin dashboard. MySQL database with PHPMailer.',
-        tags: ['PHP', 'MySQL', 'PHPMailer', 'OTP'],
+        desc: 'A secure registration and login system with OTP verification, password reset, and an admin dashboard.',
+        tags: ['PHP', 'MySQL', 'PHPMailer', 'Security'],
         dir: 'solayao107/',
+      },
+    ],
+  },
+  {
+    group: 'Business Websites',
+    color: 'secondary',
+    span: '',
+    items: [
+      {
+        title: 'Sample Business Website',
+        desc: 'A modern restaurant landing page with menu, gallery, and contact form. Built to show local businesses what is possible with a clean, responsive design.',
+        tags: ['HTML', 'CSS', 'JavaScript', 'Responsive'],
+        dir: '#',
       },
     ],
   },
@@ -211,13 +224,22 @@ export default function Projects() {
                       <span className="font-heading text-xs font-bold uppercase tracking-wider text-black">
                         {project.dir}
                       </span>
-                      <a
-                        href="#0"
-                        className="inline-flex items-center gap-2 border-4 border-black bg-accent px-4 py-2 font-heading font-black uppercase tracking-wider text-white shadow-hard transition-all duration-100 hover:shadow-hardMd active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
-                      >
-                        <GitFork size={14} strokeWidth={4} />
-                        CODE
-                      </a>
+                      <div className="flex gap-2">
+                        <a
+                          href="#0"
+                          className="inline-flex items-center gap-2 border-4 border-black bg-white px-3 py-2 font-heading font-black uppercase tracking-wider text-black shadow-hard transition-all duration-100 hover:shadow-hardMd active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
+                        >
+                          <ExternalLink size={14} strokeWidth={4} />
+                          View Live
+                        </a>
+                        <a
+                          href="#0"
+                          className="inline-flex items-center gap-2 border-4 border-black bg-accent px-3 py-2 font-heading font-black uppercase tracking-wider text-white shadow-hard transition-all duration-100 hover:shadow-hardMd active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
+                        >
+                          <GitFork size={14} strokeWidth={4} />
+                          Code
+                        </a>
+                      </div>
                     </div>
                   </div>
                 ))}

@@ -14,10 +14,10 @@ export default function About() {
           <span className="inline-block border-4 border-black bg-accent px-5 py-2 font-heading font-black uppercase tracking-widest text-white shadow-hard">
             About
           </span>
-          <h2 className="mt-4 font-heading font-black uppercase leading-[0.85] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-black">
+          <h2 className="mt-4 font-heading font-black uppercase leading-[0.85] text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-black">
             WHO IS
           </h2>
-          <h2 className="font-heading font-black uppercase leading-[0.85] text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+          <h2 className="font-heading font-black uppercase leading-[0.85] text-5xl sm:text-5xl md:text-6xl lg:text-6xl">
             <span className="inline-block border-4 border-black bg-accent px-6 font-black text-white -rotate-1">
               FLORENCE?
             </span>
@@ -26,45 +26,39 @@ export default function About() {
 
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
-            <p className="mb-6 font-heading font-bold leading-snug text-2xl sm:text-3xl">
+            <p className="mb-6 font-heading font-bold leading-snug text-xl sm:text-2xl">
               A{' '}
               <span className="inline-block border-4 border-black bg-accent px-3 py-1 font-black text-white">
                 BSIT GRADUATE
               </span>{' '}
-              FROM CARAGA STATE UNIVERSITY — CABADBARAN CAMPUS, WHO JUST CAN'T
-              STICK TO ONE SKILL.
+              FROM CARAGA STATE UNIVERSITY — CABADBARAN CAMPUS.
             </p>
 
             <p className="mb-6 font-heading font-bold leading-relaxed text-lg sm:text-xl">
-              BASED IN{' '}
-              <span className="inline-block border-4 border-black bg-white px-3 py-1 font-black text-black">
-                MAGALLANES, AGUSAN DEL NORTE
-              </span>{' '}
-              — CARAGA.
+              Based in Magallanes, Agusan del Norte — Caraga.
             </p>
 
             <p className="mb-6 font-heading font-bold leading-relaxed text-lg sm:text-xl">
-              I'VE DABBLED IN JAVA, SPRING BOOT, REACT, VUE, DJANGO, FLASK,
-              LARAVEL, PHP, AND WHATEVER ELSE LOOKS INTERESTING. FULL STACK,
-              BACKEND, FRONTEND — I DON'T PICK LANES. I JUST BUILD.
+              I've worked with Java, Spring Boot, React, Vue, Django, Flask, Laravel, and PHP. Full stack, backend, frontend — I build what your business needs.
             </p>
 
             <p className="mb-6 font-heading font-bold leading-relaxed text-lg sm:text-xl">
-              WHAT DRIVES ME? AUTHENTICITY. I CHASE THINGS THAT FEEL REAL,
-              HONEST, AND GENUINE — WHETHER IT'S CODE, DESIGN, OR A CONVERSATION.
-              IF IT AUTHENTIC, I WANT TO UNDERSTAND IT, BREAK IT, AND REBUILD
-              IT BETTER.
+              What drives me? Authenticity. I chase things that feel real, honest, and genuine — whether it's code, design, or a conversation. If it's authentic, I want to understand it, break it, and rebuild it better.
             </p>
 
             <p className="mb-6 font-heading font-bold leading-relaxed text-lg sm:text-xl">
-              NEXT CHAPTER? TRAVEL. I WANT TO WALK THE STREETS OF MANILA, CLIMB
-              THE MOUNTAINS OF THE CORDILLERAS, DIVE IN PALAWAN, AND THEN KEEP
-              GOING — ACROSS THE PHILIPPINES AND AROUND THE WORLD.
+              When I'm not coding, I love traveling across the Philippines and exploring new places.
             </p>
 
             <div className="mt-10 inline-block border-4 border-black bg-white px-6 py-5 shadow-hardMd rotate-[-1deg]">
-              <p className="font-heading font-black uppercase tracking-wider text-lg sm:text-xl">
-                "CURIOUS ABOUT ANYTHING THAT IS INTERESTING OR AUTHENTIC."
+              <p className="font-heading font-black uppercase tracking-wider text-sm sm:text-lg">
+                "Curious about anything that is interesting or authentic."
+              </p>
+            </div>
+
+            <div className="mt-8 inline-block border-4 border-black bg-accent px-6 py-5 shadow-hardMd rotate-1">
+              <p className="font-heading font-black text-white text-sm sm:text-lg">
+                I've built booking systems, management tools, and web apps — and I'm ready to build yours.
               </p>
             </div>
           </div>
@@ -73,43 +67,31 @@ export default function About() {
             <div className="border-4 border-black bg-white p-4 shadow-hardMd transition-all duration-200 hover:rotate-[-1deg] hover:shadow-hardLg">
               <img
                 src={profileImg}
-                alt="Florence Cris L. Solayao"
+                alt="Florence Cris Solayao - Web Developer from Magallanes, Agusan del Norte, Caraga Philippines"
                 className="block w-full border-4 border-black object-cover"
               />
             </div>
 
             <div className="mt-8 border-4 border-black bg-accent p-6 shadow-hardMd">
               <h3 className="font-heading font-black uppercase tracking-wider text-white text-xl">
-                EDUCATION
+                Education
               </h3>
               <div className="mt-4">
                 <p className="font-heading font-black uppercase tracking-tight text-white text-2xl">
                   CARAGA STATE UNIVERSITY
                 </p>
                 <p className="font-heading font-bold uppercase tracking-wide text-white">
-                  CABADBARAN CAMPUS
+                  Cabadbaran Campus
                 </p>
               </div>
               <div className="mt-4 border-4 border-black bg-secondary px-4 py-3">
                 <p className="text-center font-heading font-black uppercase tracking-widest text-black">
-                  BS IN INFORMATION TECHNOLOGY
+                  BS in Information Technology
                 </p>
                 <p className="text-center font-heading font-bold uppercase tracking-wide text-sm">
-                  CLASS OF 2026
+                  Class of 2026
                 </p>
               </div>
-            </div>
-
-            <div className="mt-8 border-4 border-black bg-tertiary p-6 shadow-hardMd rotate-1">
-              <h3 className="font-heading font-black uppercase tracking-wider text-black text-xl">
-                PASSION
-              </h3>
-              <p className="mt-2 font-heading font-black uppercase text-2xl text-black">
-                TRAVEL
-              </p>
-              <p className="mt-2 font-heading font-bold text-black">
-                PHILIPPINES & BEYOND
-              </p>
             </div>
           </div>
         </div>

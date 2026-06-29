@@ -6,6 +6,10 @@ const NAV_LINKS = [
   { label: 'ABOUT', href: '#about' },
   { label: 'SKILLS', href: '#skills' },
   { label: 'PROJECTS', href: '#projects' },
+  { label: 'PRICING', href: '#pricing' },
+  { label: 'PROCESS', href: '#process' },
+  { label: 'TESTIMONIALS', href: '#testimonials' },
+  { label: 'FAQ', href: '#faq' },
   { label: 'CONTACT', href: '#contact' },
 ]
 
@@ -28,7 +32,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="border-2 border-transparent px-4 py-2 font-heading font-bold uppercase tracking-wide text-black transition-all duration-100 hover:border-black hover:bg-secondary hover:shadow-hard"
+                className="border-2 border-transparent px-3 py-2 font-heading font-bold uppercase tracking-wide text-black transition-all duration-100 hover:border-black hover:bg-secondary hover:shadow-hard"
               >
                 {link.label}
               </a>

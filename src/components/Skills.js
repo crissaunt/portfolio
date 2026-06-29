@@ -1,9 +1,50 @@
 import React from 'react'
+import {
+  Code2,
+  Braces,
+  Globe,
+  Cloud,
+  Database,
+  GitBranch,
+  Coffee,
+  Layers,
+  Atom,
+  Zap,
+  Server,
+  Cpu,
+  ShoppingCart,
+  CreditCard,
+  Store,
+} from 'lucide-react'
 
 const SKILLS = {
-  Frontend: ['HTML', 'CSS', 'JavaScript', 'Vue.js', 'ReactJS'],
-  Backend: ['Django', 'Flask', 'PHP', 'Laravel', 'Java', 'Spring Boot'],
-  Tools: ['Git', 'REST APIs', 'MySQL', 'PostgreSQL', 'Linux'],
+  Frontend: [
+    { name: 'HTML', Icon: Code2 },
+    { name: 'CSS', Icon: Code2 },
+    { name: 'JavaScript', Icon: Braces },
+    { name: 'Vue.js', Icon: Layers },
+    { name: 'ReactJS', Icon: Atom },
+  ],
+  Backend: [
+    { name: 'Django', Icon: Cloud },
+    { name: 'Flask', Icon: Cpu },
+    { name: 'PHP', Icon: Globe },
+    { name: 'Laravel', Icon: Code2 },
+    { name: 'Java', Icon: Coffee },
+    { name: 'Spring Boot', Icon: Zap },
+  ],
+  Tools: [
+    { name: 'Git', Icon: GitBranch },
+    { name: 'REST APIs', Icon: Server },
+    { name: 'MySQL', Icon: Database },
+    { name: 'PostgreSQL', Icon: Database },
+  ],
+  Ecommerce: [
+    { name: 'Shopify', Icon: Store },
+    { name: 'WooCommerce', Icon: ShoppingCart },
+    { name: 'PayMongo', Icon: CreditCard },
+    { name: 'GCash Integration', Icon: CreditCard },
+  ],
 }
 
 const JAVA_SKILLS = ['Java', 'Spring Boot']
@@ -30,7 +71,7 @@ export default function Skills() {
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {Object.entries(SKILLS).map(([category, items], idx) => (
             <div
               key={category}
@@ -44,18 +85,19 @@ export default function Skills() {
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {items.map((skill) => {
-                  const isJava = JAVA_SKILLS.includes(skill)
+                {items.map(({ name, Icon }) => {
+                  const isJava = JAVA_SKILLS.includes(name)
                   return (
                     <span
-                      key={skill}
-                      className={`inline-flex items-center border-2 border-black px-3 py-1.5 font-heading font-bold uppercase tracking-wider text-sm transition-all duration-100 hover:scale-110 ${
+                      key={name}
+                      className={`inline-flex items-center gap-2 border-2 border-black px-3 py-1.5 font-heading font-bold uppercase tracking-wider text-sm transition-all duration-100 hover:scale-110 ${
                         isJava
                           ? 'bg-accent text-white'
                           : 'bg-white text-black hover:bg-secondary'
                       }`}
                     >
-                      {skill}
+                      <Icon size={14} strokeWidth={3} />
+                      {name}
                     </span>
                   )
                 })}

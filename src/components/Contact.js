@@ -1,5 +1,5 @@
 import React from 'react'
-import { GitFork, Mail, MapPin, Send } from 'lucide-react'
+import { GitFork, Mail, MapPin, Send, MessageCircle, Globe } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -21,6 +21,12 @@ export default function Contact() {
               CONNECT
             </span>
           </h2>
+        </div>
+
+        <div className="mb-8 inline-block border-4 border-black bg-white px-6 py-4 shadow-hard">
+          <p className="font-heading font-black uppercase tracking-wider text-black text-lg">
+            Reply within 24 hours
+          </p>
         </div>
 
         <div className="grid gap-12 lg:grid-cols-12">
@@ -79,20 +85,49 @@ export default function Contact() {
               <div className="space-y-4">
                 <a
                   href="https://github.com/crissaunt"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-4 border-4 border-black bg-secondary px-6 py-3 font-heading font-bold uppercase tracking-wider text-black transition-all duration-100 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-hard"
                 >
                   <GitFork size={20} strokeWidth={4} />
                   GitHub
                 </a>
                 <a
-                  href="mailto:solayaoflorence@email.com"
+                  href="https://www.linkedin.com/in/florence-solayao-5395a4375/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 border-4 border-black bg-white px-6 py-3 font-heading font-bold uppercase tracking-wider text-black transition-all duration-100 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-hard"
+                >
+                  <Globe size={20} strokeWidth={4} />
+                  LinkedIn
+                </a>
+                <a
+                  href="https://wa.me/639925450721"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-4 border-4 border-black bg-tertiary px-6 py-3 font-heading font-bold uppercase tracking-wider text-black transition-all duration-100 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-hard"
                 >
+                  <MessageCircle size={20} strokeWidth={4} />
+                  WhatsApp
+                </a>
+                <a
+                  href="https://www.facebook.com/florencecris.solayao24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 border-4 border-black bg-secondary px-6 py-3 font-heading font-bold uppercase tracking-wider text-black transition-all duration-100 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-hard"
+                >
+                  <MessageCircle size={20} strokeWidth={4} />
+                  Messenger
+                </a>
+                <a
+                  href="mailto:solayaoflorence@gmail.com"
+                  className="flex items-center gap-4 border-4 border-black bg-white px-6 py-3 font-heading font-bold uppercase tracking-wider text-black transition-all duration-100 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-hard"
+                >
                   <Mail size={20} strokeWidth={4} />
-                  solayaoflorence@email.com
+                  solayaoflorence@gmail.com
                 </a>
                 <span
-                  className="flex items-center gap-4 border-4 border-black bg-white px-6 py-3 font-heading font-bold uppercase tracking-wider text-black"
+                  className="flex items-center gap-4 border-4 border-black bg-tertiary px-6 py-3 font-heading font-bold uppercase tracking-wider text-black"
                 >
                   <MapPin size={20} strokeWidth={4} />
                   MAGALLANES, AGUSAN DEL NORTE — CARAGA

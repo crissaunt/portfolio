@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRight, Code, Zap, Square } from 'lucide-react'
+import { FaReact, FaNodeJs, FaPython, FaPhp } from 'react-icons/fa'
 
 export default function Hero() {
   return (
@@ -11,11 +12,11 @@ export default function Hero() {
 
       <div className="relative mx-auto flex min-h-[calc(100vh-6rem)] max-w-7xl flex-col items-center justify-center px-6 py-16 lg:flex-row lg:py-0">
         <div className="relative z-10 w-full max-w-3xl">
-          <div className="mb-6 inline-block border-4 border-black bg-secondary px-5 py-2 font-heading font-black uppercase tracking-widest text-black shadow-hard">
-            BSIT Graduate 2026
+          <div className="mb-6 inline-block border-4 border-black bg-red-500 px-5 py-2 font-heading font-black uppercase tracking-widest text-white shadow-hard">
+            Available for Hire
           </div>
 
-          <h1 className="font-heading font-black uppercase leading-[0.85] text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
+          <h1 className="font-heading font-black uppercase leading-[0.85] text-6xl sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="block">FLORENCE</span>
             <span className="block relative inline-block -rotate-1">
               CRIS
@@ -24,19 +25,19 @@ export default function Hero() {
             <span className="block">L. SOLAYAO</span>
           </h1>
 
-          <p className="mt-8 max-w-2xl font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl md:text-4xl">
-            BSIT Graduate ·{' '}
+          <p className="mt-8 max-w-2xl font-heading font-bold uppercase tracking-wide  text-base md:text-xl">
+            I build websites & web apps{' '}
             <span className="inline-block border-4 border-black bg-accent px-4 py-1 font-black text-white">
-              FULL STACK
-            </span>{' '}
-            <span className="-rotate-1 inline-block border-4 border-black bg-tertiary px-4 py-1 font-black text-black">
-              WEB DEV
+              FOR BUSINESSES
             </span>
           </p>
 
-          <p className="mt-6 max-w-xl font-heading font-bold leading-snug text-xl sm:text-2xl">
-            I build modern web apps that solve real problems.{' '}
-            Clean code. Reliable delivery. Ready to build yours.
+          <p className="mt-6 max-w-xl text-red-500 font-heading font-bold leading-snug text-xl sm:text-2xl">
+            Your customers are always online. Your business should be too.
+          </p>
+
+          <p className="mt-4 max-w-xl font-heading font-bold leading-snug text-lg sm:text-xl text-black/80">
+            Affordable. Reliable. Built for your business.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4 sm:gap-6">
@@ -57,14 +58,17 @@ export default function Hero() {
         </div>
 
         <div className="relative z-10 mt-16 flex w-full max-w-lg flex-col items-center gap-6 lg:mt-0">
-          <div className="border-4 border-black bg-white p-8 shadow-hardMd transition-all duration-200 hover:-translate-y-2 hover:shadow-hardLg">
+          <a
+            href="#contact"
+            className="border-4 border-black bg-white p-8 shadow-hardMd transition-all duration-200 hover:-translate-y-2 hover:shadow-hardLg"
+          >
             <p className="text-center font-heading font-black uppercase leading-none text-4xl sm:text-5xl">
               BUILD
             </p>
             <p className="text-center font-heading font-black uppercase leading-none text-4xl sm:text-5xl text-accent">
               WITH ME
             </p>
-          </div>
+          </a>
 
           <div className="border-4 border-black bg-accent px-6 py-4 shadow-hard">
             <p className="font-heading font-black uppercase tracking-widest text-white text-center">
@@ -72,10 +76,23 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="border-4 border-black bg-secondary px-6 py-4 shadow-hard rotate-1">
-            <p className="font-heading font-black uppercase tracking-wider text-black">
-              REACT · NODE · PYTHON · PHP
-            </p>
+          <div className="flex items-center gap-5 border-4 border-black bg-secondary px-6 py-4 shadow-hard rotate-1">
+            <span className="flex flex-col items-center gap-1">
+              <FaReact className="text-3xl text-[#61DAFB]" />
+              <span className="font-heading text-xs font-black uppercase tracking-wider">React</span>
+            </span>
+            <span className="flex flex-col items-center gap-1">
+              <FaNodeJs className="text-3xl text-[#339933]" />
+              <span className="font-heading text-xs font-black uppercase tracking-wider">Node</span>
+            </span>
+            <span className="flex flex-col items-center gap-1">
+              <FaPython className="text-3xl text-[#3776AB]" />
+              <span className="font-heading text-xs font-black uppercase tracking-wider">Python</span>
+            </span>
+            <span className="flex flex-col items-center gap-1">
+              <FaPhp className="text-3xl text-[#777BB4]" />
+              <span className="font-heading text-xs font-black uppercase tracking-wider">PHP</span>
+            </span>
           </div>
         </div>
       </div>

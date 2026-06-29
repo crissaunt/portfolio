@@ -1,5 +1,5 @@
 import React from 'react'
-import { GitFork, Globe, Mail, Heart } from 'lucide-react'
+import { GitFork, Globe, Mail, Heart, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -19,21 +19,34 @@ export default function Footer() {
 
           <div className="flex flex-wrap justify-center gap-3">
             <a
-              href="#0"
+              href="https://github.com/crissaunt"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-4 border-black bg-white px-4 py-2 font-heading font-black uppercase tracking-wider text-black shadow-hard transition-all duration-100 hover:shadow-hardMd active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             >
               <GitFork size={16} strokeWidth={4} />
               GitHub
             </a>
             <a
-              href="#0"
+              href="https://www.linkedin.com/in/florence-solayao-5395a4375/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-4 border-black bg-white px-4 py-2 font-heading font-black uppercase tracking-wider text-black shadow-hard transition-all duration-100 hover:shadow-hardMd active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             >
               <Globe size={16} strokeWidth={4} />
               LinkedIn
             </a>
             <a
-              href="mailto:florence@email.com"
+              href="https://wa.me/639925450721"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border-4 border-black bg-white px-4 py-2 font-heading font-black uppercase tracking-wider text-black shadow-hard transition-all duration-100 hover:shadow-hardMd active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
+            >
+              <MessageCircle size={16} strokeWidth={4} />
+              WhatsApp
+            </a>
+            <a
+              href="mailto:solayaoflorence@gmail.com"
               className="inline-flex items-center gap-2 border-4 border-black bg-white px-4 py-2 font-heading font-black uppercase tracking-wider text-black shadow-hard transition-all duration-100 hover:shadow-hardMd active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             >
               <Mail size={16} strokeWidth={4} />
